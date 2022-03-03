@@ -16,5 +16,5 @@ print(x2.shape) #tuple showing the no. of elements stored in each dimension of t
 print("=====")
 print(np.append(x,17)) #appending items to the array
 print(np.delete(x,1))
-print(np.arange(2,10,3))
+print(np.arange(2))
 
