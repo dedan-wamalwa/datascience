@@ -24,3 +24,12 @@ zz= np.array([20,21,22,23,24,25])
 print(zz)
 zz2= zz.reshape(3,2)
 print(zz2)
+
+#reshape can also perform the opposite...
+#convert a multidmensional array into a single dimensional array
+
+zz3=zz2.reshape(6)
+print(zz3)
+#we can also use flatten() method to achieve the same results...
+zz4=zz2.flatten()
+print(zz4)
