@@ -16,7 +16,7 @@ print(x2.shape) #tuple showing the no. of elements stored in each dimension of t
 print("=====")
 print(np.append(x,17)) #appending items to the array
 print(np.delete(x,1))
-print(np.arange(2))'''
+print(np.arange(2))
 print("====")
 #reshape- usd to change the shape of an existing array
 #the new array to be created must have the same no of  elements as the original array
@@ -33,3 +33,28 @@ print(zz3)
 #we can also use flatten() method to achieve the same results...
 zz4=zz2.flatten()
 print(zz4)
+
+
+#indexing and slicing
+aa=np.arange(1,10)
+print(aa[0:2])
+print(aa[5:])
+print(aa[:2])
+print(aa[-3:])'''
+
+#conditions
+#we can provide conditions to be satisfied for items to be printed
+xx=np.arange(1,10)
+print(xx[xx<4])
+#we can  combine two conditions using &
+print(xx[(xx<4) & (xx%2==0)])
+#we can also assign the condition to a variable
+y=(xx<6) &(xx%2==0)
+print(xx[y])
+
+
+
+
+
+
+
