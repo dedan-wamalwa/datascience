@@ -50,14 +50,26 @@ print(xx[xx<4])
 print(xx[(xx<4) & (xx%2==0)])
 #we can also assign the condition to a variable
 y=(xx<6) &(xx%2==0)
-print(xx[y])'''
+print(xx[y])
 #operations
 x=np.arange(1,10)
 print(x.sum())#sum of elements
 print(x.min()) #find the min
 print(x.max()) #find the max
 y=x*2#multiply everything by 2
-print(y)
+print(y)'''
+
+#stasitics
+#mean,median,variance, standard deviation
+#we use the following methods to compute statisics:
+#mean,median,var,std
+y=np.array([12,23,45,23,56,67,34,56,78,90])
+print(np.mean(y))
+print(np.median(y))
+print(np.var(y))
+print(np.std(y))
+
+
 
 
 
