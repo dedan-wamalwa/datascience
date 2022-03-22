@@ -40,7 +40,7 @@ aa=np.arange(1,10)
 print(aa[0:2])
 print(aa[5:])
 print(aa[:2])
-print(aa[-3:])'''
+print(aa[-3:])
 
 #conditions
 #we can provide conditions to be satisfied for items to be printed
@@ -50,7 +50,14 @@ print(xx[xx<4])
 print(xx[(xx<4) & (xx%2==0)])
 #we can also assign the condition to a variable
 y=(xx<6) &(xx%2==0)
-print(xx[y])
+print(xx[y])'''
+#operations
+x=np.arange(1,10)
+print(x.sum())#sum of elements
+print(x.min()) #find the min
+print(x.max()) #find the max
+y=x*2#multiply everything by 2
+print(y)
 
 
 
