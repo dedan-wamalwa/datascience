@@ -14,7 +14,7 @@ df=pd.DataFrame(data)
 #we can ecplicitly assign indices to the rows
 df2=pd.DataFrame(data, index=['Dedan','Wamalwa','Odongo','John'])
 #we can then access the rows using the loc[] function
-print(df2.loc['Dedan'])
+'''print(df2.loc['Dedan'])
 print(df2.loc['Wamalwa'])
 print(df2.loc['Odongo'])
 #we can access the columns(series) using df[column_name]
@@ -27,5 +27,6 @@ print(df2.iloc[0])
 print(df2.iloc[1])
 print(df2.iloc[:2])
 print(df2.iloc[-1])
-print(df2.iloc[-2:])
+print(df2.iloc[-2:])'''
 #conditions
+print(df2[(df2["age"]>18) & (df2["height"]>170)])
