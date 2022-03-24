@@ -15,3 +15,17 @@ df=pd.DataFrame(data)
 df2=pd.DataFrame(data, index=['Dedan','Wamalwa','Odongo','John'])
 #we can then access the rows using the loc[] function
 print(df2.loc['Dedan'])
+print(df2.loc['Wamalwa'])
+print(df2.loc['Odongo'])
+#we can access the columns(series) using df[column_name]
+print(df2["age"])
+#to access multiple series...(a dataframe)
+print(df2[["age","height"]])
+#we can use iloc[] to access rows depending on their numerical indices
+print("==Iloc==")
+print(df2.iloc[0])
+print(df2.iloc[1])
+print(df2.iloc[:2])
+print(df2.iloc[-1])
+print(df2.iloc[-2:])
+#conditions
