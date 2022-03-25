@@ -17,7 +17,7 @@ df2=pd.DataFrame(data, index=['Dedan','Wamalwa','Odongo','John'])
 '''print(df2.loc['Dedan'])
 print(df2.loc['Wamalwa'])
 print(df2.loc['Odongo'])
-#we can access the columns(series) using df[column_name]
+#we can access the columns(series) using dataframe_name[column_name]
 print(df2["age"])
 #to access multiple series...(a dataframe)
 print(df2[["age","height"]])
@@ -28,5 +28,8 @@ print(df2.iloc[1])
 print(df2.iloc[:2])
 print(df2.iloc[-1])
 print(df2.iloc[-2:])'''
+print(df2.iloc[0:])
 #conditions
-print(df2[(df2["age"]>18) & (df2["height"]>170)])
+print("==conditions==")
+# print(df2[(df2["age"]>18) & (df2["height"]>170)])
+print(df2[(df2["age"]>18)])
