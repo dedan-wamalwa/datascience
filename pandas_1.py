@@ -33,3 +33,15 @@ print(df2.iloc[0:])
 print("==conditions==")
 # print(df2[(df2["age"]>18) & (df2["height"]>170)])
 print(df2[(df2["age"]>18)])
+# Reading data
+# pandas supports reading data from CSV files(comma separated values), JSON files and SQL DBs
+# assume we have a file named names_ages.csv,we can read its data using read_csv method
+df3=pd.read_csv("datascience/names_ages.csv")
+print(df3[0:])
+# we can use the head() function to get the first five rows of the data
+# head(n)- it will return the first n rows of the dataframe
+# tail returns the last row of the dataframe
+print(df3.head())
+# print(df3.head(6))
+# print(df3.head(3))
+print(df3.tail())
