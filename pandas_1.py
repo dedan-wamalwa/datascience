@@ -40,8 +40,11 @@ df3=pd.read_csv("datascience/names_ages.csv")
 print(df3[0:])
 # we can use the head() function to get the first five rows of the data
 # head(n)- it will return the first n rows of the dataframe
-# tail returns the last row of the dataframe
-print(df3.head())
+# tail returns the last 5 rows of the dataframe by default
+# we can also pass n to it to print the last n rows
+# print(df3.head())
 # print(df3.head(6))
-# print(df3.head(3))
+print(df3.head(3))
 print(df3.tail())
+# info() method gives us essential info about the dataset such as no. of rows,columns and data types
+df3.info()
