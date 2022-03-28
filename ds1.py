@@ -18,4 +18,4 @@ for x in marray:
 print("The mean of the ages is:",mean_)
 print("The median of the ages is:",median_)
 print("The standard deviation of the ages is:",stddev)
-print("Ages within one standard deviation are:",within_one_stddev)
+print("Ages within one standard deviation are:",within_one_stddev)  
