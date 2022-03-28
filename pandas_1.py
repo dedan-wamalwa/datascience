@@ -48,3 +48,9 @@ print(df3.head(3))
 print(df3.tail())
 # info() method gives us essential info about the dataset such as no. of rows,columns and data types
 df3.info()
+# dropping a column or row
+# we use drop('name of column/row' ,axis=1/0,inplace=True )
+df3.drop('Country', axis=1,inplace=True)
+df3.drop('Paula',axis=0,inplace=0)
+print(df3.head())
+
