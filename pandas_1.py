@@ -1,3 +1,4 @@
+from calendar import month
 import pandas as pd
 #the two primary components of pandas are series and dataframes
 #series is simply a column
@@ -51,6 +52,16 @@ df3.info()
 # dropping a column or row
 # we use drop('name of column/row' ,axis=1/0,inplace=True )
 df3.drop('Country', axis=1,inplace=True)
-df3.drop('Paula',axis=0,inplace=0)
+# df3.drop('Paula',axis=0,inplace=True)
 print(df3.head())
+# working with data
+# creating a column
+# creating a month column in our dataframe
+month=["January","March","July","December","November","January","May","June","July"]
+df3['Month']=month
+# alternatively...
+location=["NRB","KSM","MMS","MSA","NKR","NRB","NRB","KSM","KSM"]
+df3.insert(2,"Location",location,True)
+print(df3.head())
+
 
