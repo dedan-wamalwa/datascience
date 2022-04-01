@@ -63,5 +63,9 @@ df3['Month']=month
 location=["NRB","KSM","MMS","MSA","NKR","NRB","NRB","KSM","KSM"]
 df3.insert(2,"Location",location,True)
 print(df3.head())
+# summary statistics of numerical columns
+print(df3.describe())
+# for a particular column...
+print(df3['DoB'].describe())
 
 
