@@ -78,3 +78,9 @@ print(x)
 # The groupby() function is used to group our dataset by the given column.
 print(df3.groupby('Location')['Age'].sum()) #sum of ages of people grouped in their resp. locations
 
+
+# small exercise 
+df3['new_row']=df3["DoB"]/df3["Age"]
+print(df3["new_row"])
+print(df3.info())
+print(df3[(df3["new_row"]==df3["new_row"].max())])
