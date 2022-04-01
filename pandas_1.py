@@ -68,4 +68,13 @@ print(df3.describe())
 # for a particular column...
 print(df3['DoB'].describe())
 
+# grouping
+# value_counts() returns how many times a value appears in a dataset / frequency
+print("==grouping==")
+x= df3['Age'].value_counts()
+print(x)
+x= df3['DoB'].value_counts()
+print(x)
+# The groupby() function is used to group our dataset by the given column.
+print(df3.groupby('Location')['Age'].sum()) #sum of ages of people grouped in their resp. locations
 
